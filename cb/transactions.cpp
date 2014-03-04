@@ -75,10 +75,10 @@ struct Transactions:public Callback
         }
 
         if(0==rootHashes.size()) {
-            #if defined(LITECOIN)
-                const char *addr = "LKvTVnkK2rAkJXfgPdkaDRgvEGvazxWS9o";
+            #if defined(DIGIBYTE)
+                const char *addr = "DSZpUVTYNNB2A6H3StQkFtSmQMHJddSXhn";
                 warning("no addresses specified, using popular address %s", addr);
-            #else
+            #elif defined(LITECOIN)
                 const char *addr = "1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp";
                 warning("no addresses specified, using satoshi's dice address %s", addr);
             #endif
